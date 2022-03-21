@@ -1,0 +1,20 @@
+.heading-primary {
+  
+  color: $white;
+
+  &--main {
+    @include transition;
+    display: block;
+    font-size: 5.2rem;
+
+    @include respond(phone) { // width < 600
+      @include transition;
+      @include font-small;
+    }
+  }
+  
+  &--sub {
+    @include font-small;
+
+  }
+}

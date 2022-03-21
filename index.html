@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,11 +14,384 @@
 
 <body>
   <header class="header">
-    <img src="/img/Logo.svg" alt="logo">
+    <div class="logo-box">
+      <img src="/img/Logo.svg" alt="Logo" class="logo-box--width">
+    </div>
+
+    <div class="header__container">
+
+      <div class="header__search-bar">
+
+        <form class="header__form">
+          <input type="text" placeholder="O que deseja encontrar?" class="header__form-input">
+          <button type="submit" class="header__form-button">            
+            <img src="/img/seacrh.svg" alt="Campo de busca" class="header__form-button-icon">
+          </button>
+        </form>
+
+      </div>
+      <button class="btn--position btn-line">
+        <span>Login</span>
+      </button>
+    </div>
+
   </header>
 
-  <h1>Alura Geek</h1>
+  <div class="banner">
+    <div class="u-wrapper-heading">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">Dezembro Promocional</span>
+        <span class="heading-primary--sub">Produtos selecionados com 33% de desconto</span>
+      </h1>
+      <div class="wrapper-button">
 
+        <button class="btn--position btn-fill" >
+          <span>Ver Consoles</span>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <main class="main">
+    <section class="product">
+
+      <div class="product__header">
+        <h2 class="product__title">Star Wars</h2>
+        <a href="#" class="product__see-it-all">Ver tudo
+          <img src="/img/arrow.svg" alt="arrow" class="product__icon">
+
+        </a>
+      </div>
+
+      <ul class="product__list">
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/star-War/1.png" alt="Caneca 3D Stormtrooper Star Wars em Porcelana com 500 ml"
+            title="Caneca 3D Stormtrooper Star Wars em Porcelana com 500 ml"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/star-War/2.png" alt="LEGO Star Wars - Disney - Capacete de Darth Vader"
+            title="LEGO Star Wars - Disney - Capacete de Darth Vader"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/star-War/3.png" alt="Action Figure Boneco Mestre Yoda Star Wars 12cm"
+            title="Action Figure Boneco Mestre Yoda Star Wars 12cm"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/star-War/4.png" alt="Boneco Storm Trooper Star Wars Gigante"
+            title="Boneco Storm Trooper Star Wars Gigante"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/star-War/5.png" alt="Boneco Star Wars The Child Baby Yoda"
+            title="Boneco Star Wars The Child Baby Yoda"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/star-War/6.png" alt="Boneco Figura De Ação Star Wars Kylo Ren"
+            title="Boneco Figura De Ação Star Wars Kylo Ren"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+      </ul>      
+    </section>
+
+    <section class="product">
+
+      <div class="product__header">
+        <h2 class="product__title">Consoles</h2>
+        <a href="#" class="product__see-it-all">Ver tudo
+          <img src="/img/arrow.svg" alt="arrow" class="product__icon">
+
+        </a>
+      </div>
+
+      <ul class="product__list">
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/console/1.png" alt="Controle Sem Fio Xbox Robot White"
+            title="Controle Sem Fio Xbox Robot White"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/console/2.png" alt="Console Playstation 5 825GB SSD + Controle Sem Fio DualSense - Branco"
+            title="Console Playstation 5 825GB SSD + Controle Sem Fio DualSense - Branco"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/console/3.png" alt="Nintendo NES Classic Edition 512MB cor  cinza e branco"
+            title="Nintendo NES Classic Edition 512MB cor  cinza e branco"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/console/4.png" alt="Console Nintendo Switch 32GB + Controle Joy-Con Neon Azul e Vermelho"
+            title="Console Nintendo Switch 32GB + Controle Joy-Con Neon Azul e Vermelho"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/console/5.png" alt="Console Xbox Series X 1TB + Controle Sem Fio - Preto"
+            title="Console Xbox Series X 1TB + Controle Sem Fio - Preto"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/console/6.png" alt="Super Game Retrô"
+            title="Super Game Retrô"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+      </ul>      
+    </section>
+
+    <section class="product">
+
+      <div class="product__header">
+        <h2 class="product__title">Diversos</h2>
+        <a href="#" class="product__see-it-all">Ver tudo
+          <img src="/img/arrow.svg" alt="arrow" class="product__icon">
+
+        </a>
+      </div>
+
+      <ul class="product__list">
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/diversos/1.png" alt="Controle Sem Fio Xbox Robot White"
+            title="Controle Sem Fio Xbox Robot White"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/diversos/2.png" alt="Console Playstation 5 825GB SSD + Controle Sem Fio DualSense - Branco"
+            title="Console Playstation 5 825GB SSD + Controle Sem Fio DualSense - Branco"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/diversos/3.png" alt="Nintendo NES Classic Edition 512MB cor  cinza e branco"
+            title="Nintendo NES Classic Edition 512MB cor  cinza e branco"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/diversos/4.png" alt="Console Nintendo Switch 32GB + Controle Joy-Con Neon Azul e Vermelho"
+            title="Console Nintendo Switch 32GB + Controle Joy-Con Neon Azul e Vermelho"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/diversos/5.png" alt="Console Xbox Series X 1TB + Controle Sem Fio - Preto"
+            title="Console Xbox Series X 1TB + Controle Sem Fio - Preto"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+
+        <li class="product__item">
+          <a href="" class="product__link">
+            <img src="/img/diversos/6.png" alt="Super Game Retrô"
+            title="Super Game Retrô"
+            class="product__img"
+            >
+            <div class="product__content">
+              <h3 class="product__description">Produto XYZ</h3>
+              <span class="product__price">R$ 60,00</span>
+              <span class="product__view-product">Ver produto</span>
+            </div>
+          </a>
+        </li>    
+      </ul>      
+    </section>    
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer__content">
+
+      <div class="footer__logo-box">
+        <img src="/img/Logo.svg" alt="logo AluraGeek" class="footer__log">
+      </div>
+  
+      <div class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Quem somos nós</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Política de privacidade</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Programa fidelidade</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Nossas lojas</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Quero ser franqueado</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Anuncie aqui</a></li>
+        </ul>  
+      </div>
+  
+      <div class="footer__form-content">
+        <h3 class="footer__title u-margin-bottom">Fale conosco</h3>
+  
+        <form class="footer__form">
+          <div class="footer__user-box">
+            <input type="text" name="" required="" class="footer__input">
+            <label>Nome</label>
+          </div>
+  
+          <div class="footer__user-box">
+            <textarea name="" id="" cols="30" rows="10" class="footer__text-area u-margin-bottom" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="footer__btn">
+            Enviar mensagem
+          </button>
+        </form>
+      </div>
+    </div>  
+    
+  </footer>
+  
+  <div class="made-by">
+    <p class="made-by__text">Desenvolvido por Fulana de Tal</p>
+    <span class="made-by__year">2021</span>
+  </div>
 
 </body>
+
 </html>

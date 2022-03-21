@@ -1,4 +1,53 @@
 .header {
-  background-color: rgb(10, 216, 79);
+  display: flex;
+  align-items: center;
   height: 13.6vh;
+  @include width($width);
+  margin: 0 auto;
+  
+  @include respond(tab-land) { // width < 1200
+   @include padding
+  }
+  
+  &__form {
+    position: relative;
+  }
+
+  &__form-input {
+    border: none;
+    height: 4rem;
+    width: 39.3rem;
+    border-radius: 2rem;
+    background: $color-grey-10;
+    padding: 0 0 0 1.6rem;
+    margin-left: 3.2rem;
+    @include transition;
+
+    @include respond(phone) { // width <768
+      width: 1rem;
+      background-color: transparent;
+    }
+  }
+
+  &__form-button {
+    position: absolute;    
+    top: 50%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    @include respond(phone) { // width <768
+      flex-direction: row-reverse;
+    }
+  }
+
+  
 }

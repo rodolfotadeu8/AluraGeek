@@ -1,0 +1,11 @@
+.made-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 10rem;
+  background-color: $white;
+  font-size: $default-font-size;
+  color: $color-grey-100;
+  font-weight: 500;
+}

@@ -1,0 +1,12 @@
+.u-wrapper-heading {
+  width: 114rem;
+  margin: 4.2rem auto;
+  
+  @include respond(tab-land) { // width <768
+    @include padding;
+  }
+}
+
+.u-margin-bottom {
+  margin-bottom: .8rem;
+}

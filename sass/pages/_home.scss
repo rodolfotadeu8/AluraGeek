@@ -1,4 +1,85 @@
-h1 {
-  background-color: rgb(205, 50, 146);
-  color: white;
+.main {
+  @include width($width);
+  margin: 6.4rem auto;
+  @include respond(tab-land) { // width < 1200
+    @include padding
+   }
+}
+
+.product {
+  margin-bottom: 6.4rem;
+
+  &__header {
+    display: flex;
+    margin-bottom: 1.6rem;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    color: $color-grey-100;
+  }
+
+  &__see-it-all {
+    display: flex;
+    align-items: center;
+    font-size: $default-font-size;
+    color: $color-primary;
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: 700;      
+  }
+
+  &__icon {
+    margin-left: 1rem;
+  }
+
+
+  &__list {
+    display: flex;
+   // grid-template-columns: repeat(6, 1fr);
+    //column-gap: 1rem;
+    list-style: none;
+    overflow: hidden;
+    justify-content: space-between;
+    gap: 1.6rem;
+    
+    @include respond(phone) { // width < 600
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 50rem;
+     }
+  }
+ 
+  &__link {
+    text-decoration: none;
+    
+  }
+
+  &__img {
+    background: red;
+    @include respond(phone) { // width < 600
+     width: 18.4rem;
+    }
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    font-size: $default-font-size;
+    color: $color-grey-100;
+  }
+  
+  &__description {
+    font-weight: 400;
+    font-size: $default-font-size;
+  }
+  
+  &__price {
+    font-weight: 700;
+  }
+
+  &__view-product{
+    color: $color-primary;
+    font-weight: 700;
+  }
 }

@@ -1,0 +1,15 @@
+.logo-box {
+
+  &--width {
+    transition: all .2s ease-in-out;
+    width: 100%;
+  }
+  @include respond(tab-port) { // width < 900
+    transition: all .2s ease-in-out;
+    &--width {
+      transition: all .2s ease-in-out;
+      width: 120px;
+    }
+  }
+
+}
