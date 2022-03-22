@@ -3,7 +3,7 @@
   align-items: center;
   height: 13.6vh;
   @include width($width);
-  margin: 0 auto;
+  @include margin-center;
   
   @include respond(tab-land) { // width < 1200
    @include padding

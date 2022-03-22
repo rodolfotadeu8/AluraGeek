@@ -26,9 +26,17 @@ $breakpoint argument choice:
   @if $breakpoint == phone-2 {
     @media (max-width: 48em) {@content}; //768px
   }
+
+  @if $breakpoint == phone-3 {
+    @media (max-width: 43.75em) {@content}; //700px
+  }
   
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) {@content}; //900px
+  }
+  
+  @if $breakpoint == tab-port-2 {
+    @media (max-width: 68.75em) {@content}; //1100px
   }
   
   @if $breakpoint == tab-land {
@@ -78,4 +86,8 @@ $breakpoint argument choice:
 
 @mixin height-footer {
   height: 36.8rem;
+}
+
+@mixin margin-center {
+  margin: 0 auto;
 }

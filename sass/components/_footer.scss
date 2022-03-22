@@ -1,15 +1,54 @@
 .footer {
   background: $color-primary-light;
   padding: 10rem 0 10rem 0;  
+
+  @include respond(phone-3) { // width < 700px
+    padding: 2rem 0 2rem 0;  
+   }
+
   &__content {
     @include width($width);
-    margin: 0 auto;
+    @include margin-center;
     display: flex;
     justify-content: space-between;
+    @include transition;
+
+    @include respond(tab-port-2) { // width < 1100px
+      @include padding;    
+    }      
+
+    @include respond(phone-3) { // width < 700px
+      flex-direction: column;    
+    }
+  }
+
+  &__content-logo-nav {
+    display: flex;
+    flex: 1;
+
+    @include respond(tab-port) { // width < 900px
+     flex-direction: column;
+     flex: 0;
+    
+    }
+  }
+
+  &__logo-box {
+    @include respond(phone-3) { // width < 700px
+      @include margin-center;
+    } 
+  }
+  
+  &__navigation {
+    @include margin-center;
+
   }
 
   &__list {
-    list-style: none;
+  list-style: none;
+  @include respond(phone-3) { // width < 700px
+   text-align: center;
+  }
   }
 
   &__item:not(:last-child) {
@@ -27,16 +66,39 @@
   &__form {
     width: 56rem;
     position: relative;
+    @include respond(phone-3) { // width < 700px
+     width: 32.8rem;
+    @include margin-center;
+    } 
+
+    &-content {
+      @include respond(phone-3) { // width < 700px
+       margin-top: 3.2rem;
+       } 
+    }
   }
   
   &__title {
     color: $color-grey-100;
     font-size: $default-font-size;
+    @include respond(phone-3) { // width < 700px
+      width: 32.8rem;
+     @include margin-center;
+     }
   }
   
   
   &__user-box {
     position: relative;
+
+    @include respond(phone-3) { // width < 700px
+
+      &:first-child {
+        margin-bottom: 1.6rem;
+      }
+
+    } 
+
 
     label {
       font-size: 1.2rem;
@@ -60,6 +122,10 @@
     }
 
       margin-bottom: 1.5rem;
+
+      @include respond(phone-3) { // width < 700px
+       @include margin-center;
+      } 
   }
   
   &__text-area {
