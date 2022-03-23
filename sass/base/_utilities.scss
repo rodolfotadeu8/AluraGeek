@@ -5,6 +5,10 @@
   @include respond(tab-land) { // width <768
     @include padding;
   }
+
+  @include respond(phone) { // width < 600px
+    margin: 2.2rem auto;    
+  }
 }
 
 .u-margin-bottom {

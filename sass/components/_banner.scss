@@ -6,4 +6,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 40.2rem;
+
+  @include respond(phone) { // width < 600px
+   
+    height: 24rem;
+  }
 }

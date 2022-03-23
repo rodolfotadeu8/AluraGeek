@@ -2,6 +2,10 @@
   
   color: $white;
 
+  @include respond(phone) { // width < 600px
+   line-height: 1.5;  
+  }
+
   &--main {
     @include transition;
     display: block;
@@ -15,6 +19,10 @@
   
   &--sub {
     @include font-small;
+
+    @include respond(phone) { // width < 600px
+      font-size: 1.4rem;   
+    }
 
   }
 }

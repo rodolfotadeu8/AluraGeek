@@ -1,13 +1,21 @@
 .main {
   @include width($width);
   margin: 6.4rem auto;
-  @include respond(tab-land) { // width < 1200
+  @include respond(tab-land) { // width < 1200px
     @include padding
-   }
+  }
+
+  @include respond(phone-2) { // width < 768px
+    margin: 1.6rem auto;
+  }
 }
 
 .product {
   margin-bottom: 6.4rem;
+
+  @include respond(phone) { // width < 600px
+    margin-bottom: 3.4rem;
+   }
 
   &__header {
     display: flex;
@@ -43,10 +51,10 @@
     justify-content: space-between;
     gap: 1.6rem;
     
-    @include respond(phone) { // width < 600
+    @include respond(phone) { // width < 600px
       justify-content: center;
       flex-wrap: wrap;
-      height: 50rem;
+      height: 55rem;
      }
   }
  
@@ -57,7 +65,7 @@
 
   &__img {
     background: red;
-    @include respond(phone) { // width < 600
+    @include respond(phone) { // width < 600px
      width: 18.4rem;
     }
   }

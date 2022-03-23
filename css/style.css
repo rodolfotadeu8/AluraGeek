@@ -43,6 +43,9 @@ button {
 
 .heading-primary {
   color: #FFFFFF; }
+  @media (max-width: 37.5em) {
+    .heading-primary {
+      line-height: 1.5; } }
   .heading-primary--main {
     transition: all .2s ease-in-out;
     display: block;
@@ -53,6 +56,9 @@ button {
         font-size: 2.2rem; } }
   .heading-primary--sub {
     font-size: 2.2rem; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 1.4rem; } }
 
 .u-wrapper-heading {
   width: 114rem;
@@ -60,6 +66,9 @@ button {
   @media (max-width: 75em) {
     .u-wrapper-heading {
       padding: 0 3.2rem 0 3.2rem; } }
+  @media (max-width: 37.5em) {
+    .u-wrapper-heading {
+      margin: 2.2rem auto; } }
 
 .u-margin-bottom {
   margin-bottom: .8rem; }
@@ -72,6 +81,9 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   height: 40.2rem; }
+  @media (max-width: 37.5em) {
+    .banner {
+      height: 24rem; } }
 
 .btn-line {
   width: 18.2rem;
@@ -88,6 +100,9 @@ button {
 
 .wrapper-button {
   margin-top: 1.6rem; }
+  @media (max-width: 37.5em) {
+    .wrapper-button {
+      margin-top: .5rem; } }
 
 .btn-fill {
   width: 13rem;
@@ -144,7 +159,7 @@ button {
     position: relative; }
     @media (max-width: 43.75em) {
       .footer__form {
-        width: 32.8rem;
+        width: 40rem;
         margin: 0 auto; } }
     @media (max-width: 43.75em) {
       .footer__form-content {
@@ -154,8 +169,8 @@ button {
     font-size: 1.6rem; }
     @media (max-width: 43.75em) {
       .footer__title {
-        width: 32.8rem;
-        margin: 0 auto; } }
+        width: 40rem;
+        margin: 0 auto .8rem; } }
   .footer__user-box {
     position: relative; }
     @media (max-width: 43.75em) {
@@ -184,6 +199,9 @@ button {
     @media (max-width: 43.75em) {
       .footer__input {
         margin: 0 auto; } }
+    @media (max-width: 37.5em) {
+      .footer__input {
+        width: 97%; } }
   .footer__text-area {
     padding: 1rem 0 0 1rem;
     resize: none;
@@ -193,6 +211,9 @@ button {
     border: none;
     border-bottom: 1px solid #C8C8C8;
     font-size: 1.6rem; }
+    @media (max-width: 37.5em) {
+      .footer__text-area {
+        width: 97%; } }
   .footer__text-area::placeholder {
     font-family: Raleway;
     color: #A2A2A2; }
@@ -208,10 +229,15 @@ button {
   align-items: center;
   height: 13.6vh;
   max-width: 114rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  transition: all .2s ease-in-out; }
   @media (max-width: 75em) {
     .header {
       padding: 0 3.2rem 0 3.2rem; } }
+  @media (max-width: 48em) {
+    .header {
+      transition: all .2s ease-in-out;
+      height: 7.2rem; } }
   .header__form {
     position: relative; }
   .header__form-input {
@@ -271,9 +297,15 @@ button {
   @media (max-width: 75em) {
     .main {
       padding: 0 3.2rem 0 3.2rem; } }
+  @media (max-width: 48em) {
+    .main {
+      margin: 1.6rem auto; } }
 
 .product {
   margin-bottom: 6.4rem; }
+  @media (max-width: 37.5em) {
+    .product {
+      margin-bottom: 3.4rem; } }
   .product__header {
     display: flex;
     margin-bottom: 1.6rem; }
@@ -300,7 +332,7 @@ button {
       .product__list {
         justify-content: center;
         flex-wrap: wrap;
-        height: 50rem; } }
+        height: 55rem; } }
   .product__link {
     text-decoration: none; }
   .product__img {

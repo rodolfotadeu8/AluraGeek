@@ -67,7 +67,7 @@
     width: 56rem;
     position: relative;
     @include respond(phone-3) { // width < 700px
-     width: 32.8rem;
+     width: 40rem;
     @include margin-center;
     } 
 
@@ -82,8 +82,8 @@
     color: $color-grey-100;
     font-size: $default-font-size;
     @include respond(phone-3) { // width < 700px
-      width: 32.8rem;
-     @include margin-center;
+      width: 40rem;
+     margin: 0 auto .8rem;
      }
   }
   
@@ -126,6 +126,13 @@
       @include respond(phone-3) { // width < 700px
        @include margin-center;
       } 
+
+      
+    @include respond(phone) { // width < 600px
+
+      width: 97%;
+
+    }
   }
   
   &__text-area {
@@ -133,6 +140,12 @@
     resize: none;
     @include input-textArea(8.2rem); 
     font-size: $default-font-size;
+
+    @include respond(phone) { // width < 600px
+
+      width: 97%;
+
+    }
     
 
   }
