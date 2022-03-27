@@ -1,19 +1,24 @@
 .header {
-  display: flex;
-  align-items: center;
-  height: 13.6vh;
-  @include width($width);
-  @include margin-center;
-  @include transition;
-  
-  @include respond(tab-land) { // width < 1200px
-   @include padding
-  }
-  
-  @include respond(phone-2) { // width < 768px
+  background: $white;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    height: 13.6vh;
+    @include width($width);
+    @include margin-center;
     @include transition;
-    height: 7.2rem;
+    
+    @include respond(tab-land) { // width < 1200px
+     @include padding
+    }
+    
+    @include respond(phone-2) { // width < 768px
+      @include transition;
+      height: 7.2rem;
+    }
   }
+
   
   &__form {
     position: relative;

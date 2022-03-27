@@ -1,0 +1,12 @@
+.width-large-login {
+  width: 100%;
+  @include respond(phone) { // width < 600px
+    width: 97%;
+  }
+
+}
+
+.width {
+  width: 42.3rem;
+  padding: 9.7rem 4.5rem 7.6rem 4.5rem
+}

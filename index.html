@@ -14,25 +14,29 @@
 
 <body>
   <header class="header">
-    <div class="logo-box">
-      <img src="/img/Logo.svg" alt="Logo" class="logo-box--width">
-    </div>
-
-    <div class="header__container">
-
-      <div class="header__search-bar">
-
-        <form class="header__form">
-          <input type="text" placeholder="O que deseja encontrar?" class="header__form-input">
-          <button type="submit" class="header__form-button">            
-            <img src="/img/seacrh.svg" alt="Campo de busca" class="header__form-button-icon">
-          </button>
-        </form>
-
+    <div class="header__content">
+      <div class="logo-box">
+        <img src="/img/Logo.svg" alt="Logo" class="logo-box--width">
       </div>
-      <button class="btn--position btn-line">
-        <span>Login</span>
-      </button>
+  
+      <div class="header__container">
+  
+        <div class="header__search-bar">
+  
+          <form class="header__form">
+            <input type="text" placeholder="O que deseja encontrar?" class="header__form-input">
+            <button type="submit" class="header__form-button">            
+              <img src="/img/seacrh.svg" alt="Campo de busca" class="header__form-button-icon">
+            </button>
+          </form>
+  
+        </div>
+        <a href="login.html" class="login-btn">
+          <span>Login</span>
+          
+        </a>
+   
+      </div>
     </div>
 
   </header>
@@ -368,19 +372,19 @@
         </div>
       </div>
   
-      <div class="footer__form-content">
-        <h3 class="footer__title u-margin-bottom">Fale conosco</h3>
+      <div class="form__box">
+        <h3 class="form__title u-margin-bottom">Fale conosco</h3>
   
-        <form class="footer__form">
-          <div class="footer__user-box">
-            <input type="text" name="" required="" class="footer__input">
+        <form class="form__content">
+          <div class="form__user-box">
+            <input type="text" name="" class="form__input" required>
             <label>Nome</label>
           </div>
   
-          <div class="footer__user-box">
-            <textarea name="" id="" cols="30" rows="10" class="footer__text-area u-margin-bottom" placeholder="Escreva sua mensagem"></textarea>
+          <div class="form__user-box">
+            <textarea name="" id="" cols="30" rows="10" class="text-area u-margin-bottom" placeholder="Escreva sua mensagem"></textarea>
           </div>
-          <button type="submit" class="footer__btn">
+          <button type="submit" class="btn">
             Enviar mensagem
           </button>
         </form>

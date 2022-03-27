@@ -1,0 +1,18 @@
+.text-area {
+  @include padding-input-textArea;
+  resize: none;
+  @include input-textArea(8.2rem); 
+  font-size: $default-font-size;
+
+  @include respond(phone) { // width < 600px
+
+    width: 97%;
+  } 
+
+  &::placeholder {
+    font-family: Raleway;
+    color: $color-grey-50;
+  }
+
+}
+
